@@ -1,24 +1,23 @@
-#include <stdio.h>
+#include<stdio.h>
 
 int main(){
-	int count=1,i=0;
-	int number[5]= {7,3,5,9,1};
-	for ( i= 0; i < 5; i++){
-	if(number[i] %2 ==0){
-		count++;
-		printf("So chan la: %d\n", number[i]);
-	}
-}
-		for (i= 0; i < 5; i++){
-		if(number[i] %2 !=0){
-			count--;
+	int num[5]={2,7,5,9,1};
+	int count = 1;
 	
-			printf("%d,",number[i]);
+	for(int i=0; i<sizeof(num)/sizeof(num[0]); i++){
+		if(num[i]%2==0){
+			count++;
+			printf("So chan la: %d\n",num[i]);
+			
+		}
+	}	
+	if(count==1){
+		printf("Khong co so chan nao");
+	
 	}
-
-	}
-	return 0; 
 }
+
+	
 
 
 	
